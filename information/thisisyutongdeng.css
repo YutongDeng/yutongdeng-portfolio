@@ -1,0 +1,105 @@
+
+:root {
+    --main-gray: #303841;
+    --main-white: #D2D1D2;
+    --main-black: #100808;
+    --main-yellow: #83f72a;
+    --main-orange: #83f72a;
+    --main-red: #83f72a;
+  }
+  
+  .main{
+    width: 39.2%;
+    float: left;
+  }
+  
+  /* Basic style*/
+  body{
+    font-family: 'Fira Code', Monaco, monospace;
+    color: var(--main-black);
+    font-size: calc(10px + 0.33vw);
+    text-align: left;
+    padding: 39vh 10vw;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
+  
+  h1,
+  h2{
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(131, 247, 42); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--main-yellow); }
+  }
+  
+  /* underlining animation */
+  /*
+  .underline{
+    background-image: linear-gradient(
+          transparent 50%,
+          #e1fffe 50%,
+          #b0f8ff 85%,
+          transparent 85%,
+          transparent 100%
+      );
+    background-repeat: no-repeat;
+      background-size: 0% 100%;
+      animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+  }
+  
+  @keyframes animatedBackground {
+      to {
+          background-size: 100% 100%;
+      }
+  }
+  */
+  /* underlining animition end */
+  a {
+        text-decoration: none;
+        color: #121314;
+        position: relative;
+      }
+      a:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 60%;
+        left: -0.1em;
+        right: -0.1em;
+        bottom: 0;
+        transition: top 200ms cubic-bezier(0, .8, .13, 1);
+        background-color: var(--main-yellow);
+      }
+      a:hover:after {
+        top: 0%;
+      }
+  
+  p {
+      display: block;
+      line-height: 1.4;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+  

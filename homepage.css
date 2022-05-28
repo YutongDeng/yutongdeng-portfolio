@@ -1,14 +1,16 @@
-ol,ul{
+a{
     color:black;
-    margin-left:66.6%;
+   
+    text-decoration: none;
     
    }
    
-   ol:hover {
+a:hover {
     color:rgb(131, 247, 42);
    }
    .container{
-     margin-top:300px;
+     margin-top:15%;
+     text-decoration: none;
    }
    
    .intro{
@@ -19,3 +21,10 @@ ol,ul{
      margin-top:50px;
    }
    
+   a {
+       text-decoration: none
+       text-color:black
+    }
+p{
+    margin-left:66.6%;
+}
