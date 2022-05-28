@@ -1,9 +1,21 @@
-.background-color{
-    white;
-}
-
-.list{
-    text-align: left;
-    text-size-adjust: 8px;
-    text-decoration-color: black;
-}
+ol,ul{
+    color:black;
+    margin-left:66.6%;
+    
+   }
+   
+   ol:hover {
+    color:rgb(131, 247, 42);
+   }
+   .container{
+     margin-top:300px;
+   }
+   
+   .intro{
+     margin-bottom:50px;
+   }
+   
+   .else{
+     margin-top:50px;
+   }
+   
